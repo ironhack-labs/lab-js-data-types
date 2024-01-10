@@ -28,9 +28,12 @@ const tongueTwister =
   " " +
   s4;
 
+const tongueTwister2 = `${s1} ${s2} ${s3} ${s4} ${s5} ${s3} ${s2} ${s1} ${s4}`;
+
 // Print out the concatenated string
 
 console.log(tongueTwister);
+console.log(tongueTwister2);
 
 /*******************************************
     Iteration 1.2 | Camel Tail
@@ -40,7 +43,16 @@ const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
 
+const lastLetterUppercase1 = part1.slice(-1).toUpperCase();
+const lastLetterUppercase2 = part2.slice(-1).toUpperCase();
+const result =
+  part1.slice(0, -1) +
+  lastLetterUppercase1 +
+  part2.slice(0, -1) +
+  lastLetterUppercase2;
 // Print the cameLtaiL-formatted string
+
+console.log(result);
 
 /*******************************************
     Iteration 2.1 | Calculate Tip
