@@ -52,7 +52,7 @@ const result =
   lastLetterUppercase2;
 // Print the cameLtaiL-formatted string
 
-console.log(result);
+console.log(`CameLtaiL: ${result}`);
 
 /*******************************************
     Iteration 2.1 | Calculate Tip
@@ -61,7 +61,11 @@ const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
 
+const tipAmount = billTotal * 0.15;
+
 // Print out the tipAmount
+
+console.log(`The 15% tip amount is ${tipAmount}`);
 
 /*******************************************
     Iteration 2.2 | Generate Random Number
@@ -69,7 +73,11 @@ const billTotal = 84;
 
 // Generate a random integer between 1 and 10 (inclusive)
 
+let randomNumber = Math.floor(Math.random() * 10) + 1;
+
 // Print the generated random number
+
+console.log(randomNumber);
 
 /*******************************************
     Iteration 3.1 | Booleans
