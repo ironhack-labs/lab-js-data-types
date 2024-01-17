@@ -37,9 +37,11 @@ console.log(result);
 const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
-
-
+const percentual  = 15;
+const tip = (billTotal * percentual)/100;
 // Print out the tipAmount
+
+console.log(tip);   
 
 
 
@@ -49,8 +51,8 @@ const billTotal = 84;
 *******************************************/
 
 // Generate a random integer between 1 and 10 (inclusive)
-
-
+const randomInteger = Math.floor(Math.random() * 10)+1
+console.log(randomInteger)
 // Print the generated random number
 
 
@@ -63,16 +65,17 @@ const a = true;
 const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
-const expression1 = a && b;
-
-const expression2 = a || b;
-
-const expression3 = !a && b;
-
-const expression4 = !(a && b);
-
-const expression5 = !a || !b;
-
-const expression6 = !(a || b);
-
-const expression7 = a && a;
+const expression1 = a && b;//falsy
+console.log(expression1)
+const expression2 = a || b;//truthy
+console.log(expression1)
+const expression3 = !a && b;//falsy
+console.log(expression3)
+const expression4 = !(a && b);//truthy
+console.log(expression4)
+const expression5 = !a || !b;//truthy
+console.log(expression5)
+const expression6 = !(a || b);//falsy
+console.log(expression6)
+const expression7 = a && a;//truthy
+console.log(expression7)
