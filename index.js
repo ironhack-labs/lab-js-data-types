@@ -12,7 +12,7 @@ const s5 = "and";
 
 // Print out the concatenated string
 
-console.log(`${s1} ${s2} ${s3} ${s4} ${s5}`)
+console.log(`${s1} ${s2} ${s3} ${s4} ${s5} ${s3} ${s2} ${s1} ${s4}`)
 
 
 /*******************************************
@@ -27,12 +27,12 @@ const part1cameL = part1.slice(0,-1) + part1.slice(-1).toUpperCase();
 
 const part2cameL = part2.slice(0, -1) + part2.slice(-1).toUpperCase();
 
-
+const result = `${part1cameL}${part2cameL} `
 
 // Print the cameLtaiL-formatted string
 
 
-console.log(`${part1cameL} ${part2cameL}`)
+console.log(result)
 
 
 /*******************************************
@@ -56,11 +56,11 @@ console.log(tipAmount)
 
 // Generate a random integer between 1 and 10 (inclusive)
 
-
+let randomNumber = Math.floor((Math.random()*10)+1)
 
 // Print the generated random number
 
-console.log(Math.floor((Math.random()*10)+1))
+console.log(randomNumber)
 
 /*******************************************
     Iteration 3.1 | Booleans
