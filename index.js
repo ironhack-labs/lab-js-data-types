@@ -21,8 +21,6 @@ tongueTwister = `${s1} ${s2} ${s3} ${s4} ${s5} ${s3} ${s2} ${s1} ${s4}`;
 console.log(tongueTwister);
 
 
-
-
 /*******************************************
     Iteration 1.2 | Camel Tail
 *******************************************/
@@ -36,7 +34,6 @@ const result = part1.slice(0, part1.length-1) + part1[part1.length-1].toUpperCas
 console.log(result);
 
 
-
 /*******************************************
     Iteration 2.1 | Calculate Tip
 *******************************************/
@@ -48,8 +45,6 @@ const tipAmount = billTotal*tipPercent/100;
 
 // Print out the tipAmount
 console.log(tipAmount);
-
-
 
 
 /*******************************************
