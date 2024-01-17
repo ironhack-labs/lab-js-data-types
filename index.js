@@ -8,10 +8,11 @@ const s4 = "bread";
 const s5 = "and";
 
 // Concatenate the string variables into one new string
+const tongueTwister = s1+" "+s2+" "+s3+" "+s4+" "+s5;
 
 
 // Print out the concatenated string
-
+console.log(tongueTwister)
 
 
 
@@ -22,10 +23,11 @@ const part1 = "java";
 const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
-
-
+const modifiedPar1 = part1.slice(0,-1) + part1.slice(-1).toUpperCase();
+const modifiedPar2 = part2.slice(0,-1) + part2.slice(-1).toUpperCase();
+const result = modifiedPar1+modifiedPar2
 // Print the cameLtaiL-formatted string
-
+console.log(result);
 
 
 
