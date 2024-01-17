@@ -35,9 +35,21 @@ const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
 
+const part1Uppercase = part1[3].toUpperCase();
+
+const formatedPart1 = part1.slice(0,3) + part1Uppercase;
+
+const part2Uppercase = part2[5].toUpperCase();
+
+const formatedPart2 = part2.slice(0,5) + part2Uppercase;
+
+let concatenated = "";
+    concatenated += `${formatedPart1} `;
+    concatenated += `${formatedPart2}`;
+
 
 // Print the cameLtaiL-formatted string
-
+console.log (concatenated);
 
 
 
@@ -48,10 +60,11 @@ const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
 
+const tipAmount = billTotal * (15 / 100);
 
 // Print out the tipAmount
 
-
+console.log (tipAmount);
 
 
 /*******************************************
@@ -60,8 +73,10 @@ const billTotal = 84;
 
 // Generate a random integer between 1 and 10 (inclusive)
 
+const randomNumber = Math.round(Math.random()*10);
 
 // Print the generated random number
+console.log (randomNumber);
 
 
 
@@ -73,16 +88,16 @@ const a = true;
 const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
-const expression1 = a && b;
+const expression1 = a && b; //false
 
-const expression2 = a || b;
+const expression2 = a || b; //true
 
-const expression3 = !a && b;
+const expression3 = !a && b; //false
 
-const expression4 = !(a && b);
+const expression4 = !(a && b); //true
 
-const expression5 = !a || !b;
+const expression5 = !a || !b; //true
 
-const expression6 = !(a || b);
+const expression6 = !(a || b); //false
 
-const expression7 = a && a;
+const expression7 = a && a; //true
