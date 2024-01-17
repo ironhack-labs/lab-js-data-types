@@ -8,11 +8,23 @@ const s4 = "bread";
 const s5 = "and";
 
 // Concatenate the string variables into one new string
+let fredFirst = "";
+fredFirst += s1 + " ";  
+fredFirst += s2 + " ";  
+fredFirst += s3 + " ";  
+fredFirst += s4 + " "; 
+fredFirst += s5;  
+
+let tedFirst = "";
+tedFirst += s3 + " ";  
+tedFirst += s2 + " ";  
+tedFirst += s1 + " ";  
+tedFirst += s4;  
 
 
 // Print out the concatenated string
 
-
+console.log (`${fredFirst} ${tedFirst}`);
 
 
 /*******************************************
