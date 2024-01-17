@@ -7,6 +7,9 @@ const s3 = "Ted";
 const s4 = "bread";
 const s5 = "and";
 
+const tongueTwister = s1+" "+s2+" "+s3+" "+s4+" "+s5+" "+s3+" "+s2+" "+s1+" "+s4;
+console.log(tongueTwister)
+
 // Concatenate the string variables into one new string
 
 
@@ -21,6 +24,12 @@ const s5 = "and";
 const part1 = "java";
 const part2 = "script";
 
+const newPart1 = part1.slice(0,3)+part1[3].toUpperCase()
+const newPart2 = part2.slice(0,5)+part2[5].toUpperCase()
+
+const result = newPart1 + newPart2
+console.log(result)
+
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
 
 
@@ -33,6 +42,10 @@ const part2 = "script";
     Iteration 2.1 | Calculate Tip
 *******************************************/
 const billTotal = 84;
+
+const tipAmount = billTotal * 0.15
+
+console.log(tipAmount)
 
 // Calculate the tip (15% of the bill total)
 
@@ -47,7 +60,8 @@ const billTotal = 84;
 *******************************************/
 
 // Generate a random integer between 1 and 10 (inclusive)
-
+let randomNumber = Math.floor(Math.random()*10)+1
+console.log(randomNumber)
 
 // Print the generated random number
 
@@ -62,15 +76,16 @@ const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
 const expression1 = a && b;
-
+//false
 const expression2 = a || b;
-
+//true
 const expression3 = !a && b;
-
+//false
 const expression4 = !(a && b);
-
+//true
 const expression5 = !a || !b;
-
+//true
 const expression6 = !(a || b);
-
+//false
 const expression7 = a && a;
+//true
