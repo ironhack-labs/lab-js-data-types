@@ -9,7 +9,7 @@ const s5 = "and";
 
 // Concatenate the string variables into one new string
 
-let tongueTwister = s1 + " " + s2 + " " + s3 + " " + s4 + " " + s5 + " " + s3 + " " + s2 + " " + s1 + " " + s4;
+let tongueTwister = `${s1} ${s2} ${s3} ${s4} ${s5} ${s3} ${s2} ${s1} ${s4}`;
 
 // Print out the concatenated string
 console.log(tongueTwister);
@@ -40,9 +40,11 @@ console.log(result);
 *******************************************/
 const billTotal = 84;
 
+let billPercent = 15;
+
 // Calculate the tip (15% of the bill total)
 
-let tipAmount = (billTotal * 15) / 100;
+let tipAmount = (billTotal * billPercent) / 100;
 
 // Print out the tipAmount
 console.log(tipAmount);
@@ -81,4 +83,10 @@ const expression6 = !(a || b); // false
 
 const expression7 = a && a; // true
 
+console.log(expression1);
+console.log(expression2);
+console.log(expression3);
+console.log(expression4);
+console.log(expression5);
+console.log(expression6);
 console.log(expression7);
