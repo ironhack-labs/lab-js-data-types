@@ -118,7 +118,6 @@ const s5 = "and";
 // Concatenate the string variables into one new string
 
 // Print out the concatenated string
-```
 
 <br>
 
