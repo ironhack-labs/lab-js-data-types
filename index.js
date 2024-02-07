@@ -38,7 +38,7 @@ const billTotal = 84;
 let tipAmount = (billTotal * .15)
 
 // Print out the tipAmount
-console.log(tipAmount + billTotal)
+console.log(tipAmount)
 
 
 
@@ -51,13 +51,8 @@ console.log(tipAmount + billTotal)
 let randomNum = Math.floor(Math.random() * 10) + 1 
 
 
-let randomInt = Math.random() *10
-let randomNumber = Math.round(randomInt)
-
-
 // Print the generated random number
 console.log(randomNum)
-console.log(randomNumber)
 
 /*******************************************
     Iteration 3.1 | Booleans
@@ -71,7 +66,7 @@ const expression1 = a && b; //false
 
 const expression2 = a || b; //true
 
-const expression3 = !a && b; //true
+const expression3 = !a && b; //false
 
 const expression4 = !(a && b); //true
 
