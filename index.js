@@ -37,11 +37,10 @@ let camel = `${modPart1} ${modPart2}`
 const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
-tip = 84 *0.15
-let totalCost = billTotal + tip
+tipAmount = 84 *0.15
 
 // Print out the tipAmount
-console.log(`The bill is $${totalCost}0`)
+console.log(tipAmount)
 
 
 
@@ -72,7 +71,7 @@ const expression2 = a || b;
 console.log(`My guess is true. The answer is ${expression2}.`)
 
 const expression3 = !a && b;
-console.log(`My guess is true. The answer is ${expression3}.`)
+console.log(`My guess is false. The answer is ${expression3}.`)
 
 const expression4 = !(a && b);
 console.log(`My guess is true. The answer is ${expression4}.`)
