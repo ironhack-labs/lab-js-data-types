@@ -24,7 +24,7 @@ const part2 = "script";
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
 let modPart1 = part1.substring(0,3) + part1.charAt(3).toUpperCase()
 let modPart2 = part2.substring(0,5) + part2.charAt(5).toUpperCase()
-let camel = `${modPart1} ${modPart2}`
+let camel = `${modPart1}${modPart2}`
 
 // Print the cameLtaiL-formatted string
  console.log(camel)
@@ -37,7 +37,7 @@ let camel = `${modPart1} ${modPart2}`
 const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
-tipAmount = 84 *0.15
+tipAmount = billTotal * 0.15
 
 // Print out the tipAmount
 console.log(tipAmount)
@@ -50,7 +50,7 @@ console.log(tipAmount)
 
 // Generate a random integer between 1 and 10 (inclusive)
 let randomInt = Math.random() *10
-let randomNumber = Math.round(randomInt)
+let randomNumber = Math.ceil(randomInt)
 
 // Print the generated random number
 console.log(randomNumber)
