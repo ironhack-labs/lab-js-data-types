@@ -54,16 +54,24 @@ const a = true;
 const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
-const expression1 = a && b;
+const expression1 = a && b; //false
 
-const expression2 = a || b;
+const expression2 = a || b; //true
 
-const expression3 = !a && b;
+const expression3 = !a && b; //false
 
-const expression4 = !(a && b);
+const expression4 = !(a && b); //true
 
-const expression5 = !a || !b;
+const expression5 = !a || !b; //true
 
-const expression6 = !(a || b);
+const expression6 = !(a || b); //false
 
-const expression7 = a && a;
+const expression7 = a && a; //true
+
+console.log("expression1", expression1);
+console.log("expression2", expression2);
+console.log("expression3", expression3);
+console.log("expression4", expression4);
+console.log("expression5", expression5);
+console.log("expression6", expression6);
+console.log("expression7", expression7);
