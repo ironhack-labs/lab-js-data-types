@@ -8,13 +8,10 @@ const s4 = "bread";
 const s5 = "and";
 
 // Concatenate the string variables into one new string
-
+const tongueTwister = `${s1} ${s2} ${s3} ${s4} ${s5} ${s3} ${s2} ${s1} ${s4}`;
 
 // Print out the concatenated string
-
-
-
-
+console.log(` ${tongueTwister}`);
 /*******************************************
     Iteration 1.2 | Camel Tail
 *******************************************/
@@ -23,11 +20,7 @@ const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
 
-
 // Print the cameLtaiL-formatted string
-
-
-
 
 /*******************************************
     Iteration 2.1 | Calculate Tip
@@ -36,11 +29,7 @@ const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
 
-
 // Print out the tipAmount
-
-
-
 
 /*******************************************
     Iteration 2.2 | Generate Random Number
@@ -48,10 +37,7 @@ const billTotal = 84;
 
 // Generate a random integer between 1 and 10 (inclusive)
 
-
 // Print the generated random number
-
-
 
 /*******************************************
     Iteration 3.1 | Booleans
