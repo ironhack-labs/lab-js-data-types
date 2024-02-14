@@ -41,11 +41,11 @@ console.log(`${tip}`);
 /*******************************************
     Iteration 2.2 | Generate Random Number
 *******************************************/
-
 // Generate a random integer between 1 and 10 (inclusive)
+const randomNumber = Math.floor(Math.random() * 10) + 1;
 
 // Print the generated random number
-
+console.log(`randomNumber is ${randomNumber}`);
 /*******************************************
     Iteration 3.1 | Booleans
 *******************************************/
