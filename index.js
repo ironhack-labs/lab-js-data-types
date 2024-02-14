@@ -74,7 +74,7 @@ const expression4 = !(a && b);
 const expression5 = !a || !b;
 //true
 const expression6 = !(a || b);
-//true why not true ? At least one of them is true because thanks to !() a=false and b=true right ?
+//true why not true ? At least one of them is true because thanks to !() a=false and b=true right ? test
 const expression7 = a && a;
 //true
 
