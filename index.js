@@ -18,6 +18,13 @@ console.log(` ${tongueTwister}`);
 const part1 = "java";
 const part2 = "script";
 
+const lastCharFromPart1 = part1[part1.length - 1].toUpperCase();
+const lastCharFromPart2 = part2[part2.length - 1].toUpperCase();
+const part1AferFormat = part1.slice(0, part1.length - 1) + lastCharFromPart1;
+const part2AferFormat = part2.slice(0, part2.length - 1) + lastCharFromPart2;
+
+console.log(`${part1AferFormat}${part2AferFormat}`);
+
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
 
 // Print the cameLtaiL-formatted string
