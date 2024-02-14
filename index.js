@@ -66,7 +66,7 @@ console.log(randomNumber);
 const a = true;
 const b = false;
 
-// Try and guess the output of the below expressions first and write your answers down:
+//Try and guess the output of the below expressions first and write your answers down:
 const expression1 = a && b;
 //false
 const expression2 = a || b;
