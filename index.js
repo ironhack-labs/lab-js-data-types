@@ -48,7 +48,7 @@ console.log(tipAmount)
 *******************************************/
 
 // Generate a random integer between 1 and 10 (inclusive)
-const randomNumber= 9*Math.random()+1;
+const randomNumber= Math.floor(Math.random() * 10) +1;
 
 // Print the generated random number
 console.log(randomNumber)
@@ -83,10 +83,10 @@ false
 const expression7 = a && a;
 true
 
-console.log(expression1)
-console.log(expression2)
-console.log(expression3)
-console.log(expression4)
-console.log(expression5)
-console.log(expression6)
-console.log(expression7)
+//console.log(expression1)
+//console.log(expression2)
+//console.log(expression3)
+//console.log(expression4)
+//console.log(expression5)
+//console.log(expression6)
+//console.log(expression7)
