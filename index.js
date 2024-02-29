@@ -61,15 +61,16 @@ const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
 const expression1 = a && b;
-
+console.log("A & B is false. Result = ",expression1);
 const expression2 = a || b;
-
+console.log("A OR B is true. Result = ",expression2);
 const expression3 = !a && b;
-
+console.log("!A & B is false. Result = ",expression3);
 const expression4 = !(a && b);
-
+console.log("!(A & B) is true. Result = ",expression4);
 const expression5 = !a || !b;
-
+console.log("!A OR !B is true. Result = ",expression5);
 const expression6 = !(a || b);
-
+console.log("!(A OR B) is false. Result = ",expression6);
 const expression7 = a && a;
+console.log("A & A is true. Result = ",expression7);
