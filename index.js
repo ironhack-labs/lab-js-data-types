@@ -46,10 +46,10 @@ console.log(tipAmount);
 *******************************************/
 
 // Generate a random integer between 1 and 10 (inclusive)
-
+let randomNumber = Math.floor(Math.random() * 10);
 
 // Print the generated random number
-
+console.log(randomNumber);
 
 
 /*******************************************
