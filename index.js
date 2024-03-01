@@ -64,19 +64,30 @@ const a = true;
 const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
-const expression1 = a && b;
-console.log(expression1)
+const expression1 = a && b; 
+console.log(expression1)  
+// this should be false.
+
 const expression2 = a || b;
 console.log(expression2)
+//this should be true.
 
 const expression3 = !a && b;
 console.log(expression3)
+//this should be false
 
 const expression4 = !(a && b);
 console.log(expression4)
+//this should be true.
+
 const expression5 = !a || !b;
 console.log(expression5)
+//this should be true
 
 const expression6 = !(a || b);
 console.log(expression6)
+// this should be false.
 
+const expression7 = a && a;
+console.log(expression7)
+//this should be true.
