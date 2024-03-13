@@ -8,10 +8,10 @@ const s4 = "bread";
 const s5 = "and";
 
 // Concatenate the string variables into one new string
-
+const concatenatedStr = `${s1} ${s2} ${s3} ${s4} ${s5}`;
 
 // Print out the concatenated string
-
+console.log(concatenatedStr);
 
 
 
@@ -22,11 +22,13 @@ const part1 = "java";
 const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
-
+let lastChar = part1.slice(-1).toUpperCase();
+let lastChar2 = part2.slice(-1).toUpperCase();
 
 // Print the cameLtaiL-formatted string
 
-
+const result = part1.slice(0,-1) + lastChar + part2.slice(0,-1) +  lastChar2;
+console.log(`The concatenated string is: ${result}`);
 
 
 /*******************************************
@@ -35,10 +37,10 @@ const part2 = "script";
 const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
-
+let tip = billTotal * (15/100);
 
 // Print out the tipAmount
-
+console.log(tip);
 
 
 
@@ -47,10 +49,10 @@ const billTotal = 84;
 *******************************************/
 
 // Generate a random integer between 1 and 10 (inclusive)
-
+const newInt = Math.ceil(Math.random(0,1)*10);
 
 // Print the generated random number
-
+console.log(`New number is ${newInt}`);
 
 
 /*******************************************
@@ -74,3 +76,12 @@ const expression5 = !a || !b;
 const expression6 = !(a || b);
 
 const expression7 = a && a;
+
+console.log(`Expression1 is: ${expression1} , My guess is FALSE`);
+console.log(`Expression2 is: ${expression2} , My guess is TRUE`);
+console.log(`Expression3 is: ${expression3} , My guess is FALSE`);
+console.log(`Expression4 is: ${expression4} , My guess is TRUE`);
+console.log(`Expression5 is: ${expression5} , My guess is TRUE`);
+console.log(`Expression6 is: ${expression6} , My guess is FALSE`);
+console.log(`Expression7 is: ${expression7} , My guess is TRUE`);
+
