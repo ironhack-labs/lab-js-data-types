@@ -12,6 +12,15 @@ const s5 = "and";
 
 // Print out the concatenated string
 
+s1 = "Fred"
+s2 = "fed"
+s3 = "Ted"
+s4 = "bread"
+s5 = "and"
+
+combined = `${s1} ${s2} ${s3} ${s4} ${s5}`
+
+console.log(combined)
 
 
 
@@ -25,6 +34,14 @@ const part2 = "script";
 
 
 // Print the cameLtaiL-formatted string
+const part1 = "java";
+const part2 = "script";
+
+const together = part1.slice(0, -1) + part1.charAt(part1.length - 1).toUpperCase() + part2.slice(0, -1) + part2.charAt(part2.length - 1).toUpperCase();
+
+console.log(together);
+
+
 
 
 
@@ -39,7 +56,14 @@ const billTotal = 84;
 
 // Print out the tipAmount
 
+const billTotal = 84;
+const tipPercentage = 0.15; 
 
+const tipAmount = billTotal * tipPercentage;
+const totalBillWithTip = billTotal + tipAmount;
+
+
+console.log("Total bill with tip:", totalBillWithTip);
 
 
 /*******************************************
@@ -51,7 +75,8 @@ const billTotal = 84;
 
 // Print the generated random number
 
-
+const randomNumber = getRandomIntInclusive(1, 10);
+console.log(randomNumber);
 
 /*******************************************
     Iteration 3.1 | Booleans
@@ -61,16 +86,16 @@ const a = true;
 const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
-const expression1 = a && b;
+const expression1 = a && b; false
 
-const expression2 = a || b;
+const expression2 = a || b; true
 
-const expression3 = !a && b;
+const expression3 = !a && b; false
 
-const expression4 = !(a && b);
+const expression4 = !(a && b); true
 
-const expression5 = !a || !b;
+const expression5 = !a || !b; true
 
-const expression6 = !(a || b);
+const expression6 = !(a || b); false
 
-const expression7 = a && a;
+const expression7 = a && a; true
