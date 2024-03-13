@@ -53,11 +53,10 @@ console.log(tip);
 *******************************************/
 
 // Generate a random integer between 1 and 10 (inclusive)
-const randomNumber = Math.random() * (11 - 1) + 1;
-const intRandomNumber = Math.floor(randomNumber);
+const randomNumber = Math.floor(Math.random() * 10) + 1;
 
 // Print the generated random number
-console.log(intRandomNumber);
+console.log(randomNumber);
 
 /*******************************************
     Iteration 3.1 | Booleans
