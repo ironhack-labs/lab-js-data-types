@@ -8,7 +8,7 @@ const s4 = "bread";
 const s5 = "and";
 
 // Concatenate the string variables into one new string
-const tongueTwister = `${s1} ${s2} ${s3} ${s4} ${s5}`
+const tongueTwister = `${s1} ${s2} ${s3} ${s4} ${s5} ${s3} ${s2} ${s1} ${s4}`
 
 // Print out the concatenated string
 console.log(`Tongue twister is: ${tongueTwister}`);
@@ -49,7 +49,7 @@ console.log(`Tip amount is ${tipAmount}`);
 *******************************************/
 
 // Generate a random integer between 1 and 10 (inclusive)
-const randomNumber = Math.round(Math.random() * 10);
+const randomNumber = Math.floor(Math.random() * 10) + 1;
 
 // Print the generated random number
 console.log(`Random number is ${randomNumber}`);
