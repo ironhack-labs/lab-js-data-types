@@ -8,7 +8,7 @@ const s4 = "bread";
 const s5 = "and";
 
 // Concatenate the string variables into one new string
-let result11 = `${s1} ${s2} ${s3} ${s4} ${s5}`;
+let result11 = `${s1} ${s2} ${s3} ${s4} ${s5} ${s3} ${s2} ${s1} ${s4}`;
 // Print out the concatenated string
 console.log(result11);
 
@@ -19,8 +19,8 @@ const part1 = "java";
 const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
-upperPart1 = part1.slice(0, 3) + part1[3].toUpperCase();
-upperPart2 = part2.slice(0, 5) + part2[5].toUpperCase();
+upperPart1 = part1.slice(0, -1) + part1[3].toUpperCase();
+upperPart2 = part2.slice(0, -1) + part2[5].toUpperCase();
 
 // Print the cameLtaiL-formatted string
 console.log(upperPart1 + upperPart2);
@@ -31,7 +31,7 @@ console.log(upperPart1 + upperPart2);
 const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
-const tip = (billTotal / 100) * 15;
+const tip = billTotal * 0.15;
 // Print out the tipAmount
 console.log(tip);
 /*******************************************
@@ -51,16 +51,23 @@ const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
 const expression1 = a && b;
-false;
+//false;
+console.log("expression 1", expression1);
 const expression2 = a || b;
-true;
+//true;
+console.log("expression 2", expression2);
 const expression3 = !a && b;
-false;
+//false;
+console.log("expression 3", expression3);
 const expression4 = !(a && b);
-true;
+//true;
+console.log("expression 4", expression4);
 const expression5 = !a || !b;
-true;
+//true;
+console.log("expression 5", expression5);
 const expression6 = !(a || b);
-false;
+//false;
+console.log("expression 6", expression6);
 const expression7 = a && a;
-true;
+//true;
+console.log("expression 7", expression7);
