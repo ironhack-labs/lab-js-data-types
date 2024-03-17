@@ -8,10 +8,10 @@ const s4 = "bread";
 const s5 = "and";
 
 // Concatenate the string variables into one new string
-const result = `${s1} ${s2} ${s3} ${s4} ${s5}`
+const tongueTwister = `${s1} ${s2} ${s3} ${s4} ${s3} ${s2} ${s1} ${s4}`;
 
 // Print out the concatenated string
-console.log(result);
+console.log(tongueTwister);
 
 
 
