@@ -8,10 +8,10 @@ const s4 = "bread";
 const s5 = "and";
 
 // Concatenate the string variables into one new string
-
+const tongueTwister = `${s1} ${s2} ${s3} ${s4} ${s5} ${s3} ${s2} ${s1} ${s4}`
 
 // Print out the concatenated string
-
+console.log(tongueTwister);
 
 
 
@@ -22,8 +22,17 @@ const part1 = "java";
 const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
+const lastChar1 = part1.slice(-1);
+const lastToUp1 = lastChar1.toUpperCase();
+const part1LastToUp = part1.slice(0,3) + lastToUp1;
 
+const lastChar2 = part2.slice(-1);
+const lastToUp2 = lastChar2.toUpperCase();
+const part2LastToUp = part2.slice(0,5) + lastToUp2;
 
+const result = part1LastToUp + part2LastToUp;
+ 
+console.log(result); 
 // Print the cameLtaiL-formatted string
 
 
@@ -35,10 +44,11 @@ const part2 = "script";
 const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
-
+const totalAmount = billTotal * 15 / 100 + billTotal;
+tipAmount = billTotal * 0.15;
 
 // Print out the tipAmount
-
+console.log(tipAmount);
 
 
 
@@ -47,6 +57,8 @@ const billTotal = 84;
 *******************************************/
 
 // Generate a random integer between 1 and 10 (inclusive)
+const randomNumber = Math.floor(Math.random() * 10) +1;
+console.log(randomNumber);
 
 
 // Print the generated random number
@@ -62,15 +74,22 @@ const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
 const expression1 = a && b;
+console.log(expression1, "false");
 
 const expression2 = a || b;
+console.log(expression2, "true");
 
 const expression3 = !a && b;
+console.log(expression3, "false");
 
 const expression4 = !(a && b);
+console.log(expression4, "true");
 
 const expression5 = !a || !b;
+console.log(expression5, "true");
 
 const expression6 = !(a || b);
+console.log(expression6, "false");
 
 const expression7 = a && a;
+console.log(expression7, "true");
