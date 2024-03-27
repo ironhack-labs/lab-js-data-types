@@ -83,7 +83,7 @@ console.log(expression3);
 
 
 const expression4 = !(a && b);
-//false
+//True
 console.log(expression4);
 
 const expression5 = !a || !b;
