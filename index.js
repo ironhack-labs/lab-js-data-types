@@ -8,7 +8,7 @@ const s4 = "bread";
 const s5 = "and";
 
 // Concatenate the string variables into one new string
-const sAll = s1 + s2 + s3 + s4 + s5;
+const sAll = s1 + ' ' + s2 + ' '  + s3 + ' '  + s4 + ' '  + s5;
 
 // Print out the concatenated string
 console.log(sAll);
@@ -65,22 +65,22 @@ const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
 const expression1 = a && b;
-console.log(expression1, "false");
+console.log(expression1);
 
 const expression2 = a || b;
-console.log(expression2, "true");
+console.log(expression2);
 
 const expression3 = !a && b;
-console.log(expression3, "false");
+console.log(expression3);
 
 const expression4 = !(a && b);
-console.log(expression4, "true");
+console.log(expression4);
 
 const expression5 = !a || !b;
-console.log(expression5, "true");
+console.log(expression5);
 
 const expression6 = !(a || b);
-console.log(expression6, "false");
+console.log(expression6);
 
 const expression7 = a && a;
-console.log(expression7, "true");
+console.log(expression7);
