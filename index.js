@@ -9,7 +9,7 @@ const s5 = "and";
 
 // Concatenate the string variables into one new string
 let tongueTwister = ""; 
-tongueTwister += s1 + ' ' + s2 + ' ' + s3 + ' ' + s4 + ' ' + s5 + ' '; //need to manually add the spaces
+tongueTwister += s1 + ' ' + s2 + ' ' + s3 + ' ' + s4 + ' ' + s5 + ' ' + s1 + ' ' + s2 + ' ' + s3 + ' ' + s4; //need to manually add the spaces
 
 // Print out the concatenated string
 console.log(tongueTwister);
