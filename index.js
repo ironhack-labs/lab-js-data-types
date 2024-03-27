@@ -9,10 +9,11 @@ const s5 = "and";
 
 // Concatenate the string variables into one new string
 
+let tongueTwister = `${s1} ${s2} ${s3} ${s4} ${s5} ${s3} ${s2} ${s1} ${s4}`
 
 // Print out the concatenated string
 
-
+console.log(tongueTwister);
 
 
 /*******************************************
@@ -23,10 +24,14 @@ const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
 
+const lastLetter1 = part1[3].toUpperCase();
+const lastLetter2 = part2[5].toUpperCase();
+
+const result = part1.substring(0,3)+lastLetter1+part2.substring(0,5)+lastLetter2;
 
 // Print the cameLtaiL-formatted string
 
-
+console.log(result);
 
 
 /*******************************************
@@ -36,10 +41,11 @@ const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
 
+const tip = billTotal*0.15
 
 // Print out the tipAmount
 
-
+console.log(tip);
 
 
 /*******************************************
@@ -48,10 +54,11 @@ const billTotal = 84;
 
 // Generate a random integer between 1 and 10 (inclusive)
 
+const randomNumber = Math.floor(Math.random()*10)+1;
 
 // Print the generated random number
 
-
+console.log(randomNumber);
 
 /*******************************************
     Iteration 3.1 | Booleans
@@ -63,14 +70,28 @@ const b = false;
 // Try and guess the output of the below expressions first and write your answers down:
 const expression1 = a && b;
 
+console.log("My guess: false", "result:", expression1)
+
 const expression2 = a || b;
+
+console.log("My guess: true", "result:", expression2)
 
 const expression3 = !a && b;
 
+console.log("My guess: false", "result:", expression3)
+
 const expression4 = !(a && b);
+
+console.log("My guess: true", "result:", expression4)
 
 const expression5 = !a || !b;
 
+console.log("My guess: true", "result:", expression5)
+
 const expression6 = !(a || b);
 
+console.log("My guess: false", "result:", expression6)
+
 const expression7 = a && a;
+
+console.log("My guess: true", "result:", expression7)
