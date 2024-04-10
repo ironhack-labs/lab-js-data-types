@@ -7,12 +7,13 @@ const s3 = "Ted";
 const s4 = "bread";
 const s5 = "and";
 
+
 // Concatenate the string variables into one new string
 
-
+const tongueTwister = `${s1} ${s2} ${s3} ${s4} ${s5} ${s3} ${s2} ${s1} ${s4}`;
 // Print out the concatenated string
 
-
+console.log(tongueTwister);
 
 
 /*******************************************
@@ -23,10 +24,17 @@ const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
 
-
+const camelTail1 = part1.slice(0, -1)
 // Print the cameLtaiL-formatted string
 
+const firstPart = "java";
+const secondPart = "script";
 
+// Convert the last letter of part1 and part2 to uppercase and concatenate the strings
+const camelTail = firstPart.slice(0, -1) + firstPart.slice(-1).toUpperCase() + secondPart.slice(0, -1) + secondPart.slice(-1).toUpperCase();
+
+// Print the cameLtaiL-formatted string
+console.log(camelTail);
 
 
 /*******************************************
@@ -34,23 +42,22 @@ const part2 = "script";
 *******************************************/
 const billTotal = 84;
 
-// Calculate the tip (15% of the bill total)
+// Calculate the tip amount (15% of the bill total)
+const tipAmount = billTotal * 0.15;
 
-
-// Print out the tipAmount
-
-
+// Print out the tip amount
+console.log(tipAmount);
 
 
 /*******************************************
     Iteration 2.2 | Generate Random Number
 *******************************************/
 
-// Generate a random integer between 1 and 10 (inclusive)
+// Gere um número inteiro aleatório entre 1 e 10 (inclusive)
+const randomNumber = Math.floor(Math.random() * 10) + 1;
 
-
-// Print the generated random number
-
+// Imprima o número aleatório gerado
+console.log(randomNumber);
 
 
 /*******************************************
@@ -62,15 +69,24 @@ const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
 const expression1 = a && b;
-
+//retorn false
 const expression2 = a || b;
-
+//retorn true
 const expression3 = !a && b;
-
+//retorn false
 const expression4 = !(a && b);
-
+//return true
 const expression5 = !a || !b;
-
+//return true
 const expression6 = !(a || b);
-
+//return false
 const expression7 = a && a;
+//return true
+
+console.log(expression1)
+console.log(expression2)
+console.log(expression3)
+console.log(expression4)
+console.log(expression5)
+console.log(expression6)
+console.log(expression7)
