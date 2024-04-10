@@ -7,6 +7,12 @@ const s3 = "Ted";
 const s4 = "bread";
 const s5 = "and";
 
+let tongueTwister = (s1 + " " + s2 + " " + s3 + " " + s4 + " " + s5 + " " + s1 + " " + s2 + " " + s3 + " " + s4)
+
+console.log(tongueTwister);
+
+
+
 // Concatenate the string variables into one new string
 
 
@@ -21,6 +27,19 @@ const s5 = "and";
 const part1 = "java";
 const part2 = "script";
 
+const part1start = part1.substring(0, part1.length - 1);
+const part1end = part1[part1.length - 1].toUpperCase();
+const part2start = part2.substring(0, part2.length - 1);
+const part2end = part2[part2.length - 1].toUpperCase();
+
+const result = part1start + part1end + part2start + part2end
+console.log(result);
+
+
+
+
+
+
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
 
 
@@ -33,6 +52,12 @@ const part2 = "script";
     Iteration 2.1 | Calculate Tip
 *******************************************/
 const billTotal = 84;
+const propin = (15 / 100);
+
+const tipAmount = (billTotal * propin);
+console.log(tipAmount);
+
+
 
 // Calculate the tip (15% of the bill total)
 
@@ -51,6 +76,9 @@ const billTotal = 84;
 
 // Print the generated random number
 
+
+const randomNumber = Math.floor(Math.random() * 10) + 1;
+console.log(randomNumber);
 
 
 /*******************************************
@@ -74,3 +102,11 @@ const expression5 = !a || !b;
 const expression6 = !(a || b);
 
 const expression7 = a && a;
+
+console.log(expression1);
+console.log(expression2);
+console.log(expression3);
+console.log(expression4);
+console.log(expression5);
+console.log(expression6);
+console.log(expression7);
