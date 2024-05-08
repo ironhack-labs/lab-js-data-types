@@ -12,6 +12,7 @@ const s5 = "and";
 
 // Print out the concatenated string
 
+console.log (s1,s2,s3,s4,s5, s3, s2, s1, s4);
 
 
 
@@ -23,8 +24,20 @@ const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
 
+const partOne = part1.slice (-1).toUpperCase();
+const partTwo = part2.slice (-1).toUpperCase();
+
+console.log(partOne,partTwo);
+
+
+
+
 
 // Print the cameLtaiL-formatted string
+
+const partOneAndTwo = part1.slice(0, -1) + partOne + " " + part2.slice(0, -1) + partTwo;
+console.log(partOneAndTwo);
+
 
 
 
@@ -36,9 +49,12 @@ const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
 
+const tip = 15;
+const billWithTip = (billTotal + (billTotal*tip) / 100);
 
 // Print out the tipAmount
 
+console.log(billWithTip)
 
 
 
@@ -48,10 +64,11 @@ const billTotal = 84;
 
 // Generate a random integer between 1 and 10 (inclusive)
 
+Math.floor(Math.random() * 10) + 1;
 
 // Print the generated random number
 
-
+console.log(Math.floor(Math.random() * 10) + 1);
 
 /*******************************************
     Iteration 3.1 | Booleans
@@ -74,3 +91,7 @@ const expression5 = !a || !b;
 const expression6 = !(a || b);
 
 const expression7 = a && a;
+
+
+
+// Above boolean results i think they depend of the a and b truthiness 
