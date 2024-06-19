@@ -9,10 +9,11 @@ const s5 = "and";
 
 // Concatenate the string variables into one new string
 
+let tongueTwister = `${s1} ${s2} ${s3} ${s4} ${s5} ${s3} ${s2} ${s1} ${s4}`; 
 
 // Print out the concatenated string
 
-
+console.log(tongueTwister);
 
 
 /*******************************************
@@ -23,9 +24,11 @@ const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
 
-
+const lastLetter1 = part1.slice(0,part1.length-1) + part1[part1.length-1].toUpperCase()
+const lastLetter2 = part2.slice(0,part2.length-1) + part2[part2.length-1].toUpperCase()
 // Print the cameLtaiL-formatted string
 
+console.log(lastLetter1+lastLetter2)
 
 
 
@@ -36,8 +39,14 @@ const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
 
+const porcentaje = billTotal * 0.15
+console.log(porcentaje)
 
 // Print out the tipAmount
+
+const tipAmount = billTotal + porcentaje;
+console.log(tipAmount);
+
 
 
 
@@ -48,10 +57,14 @@ const billTotal = 84;
 
 // Generate a random integer between 1 and 10 (inclusive)
 
+let resultado = Math.random()*10;
+let randoNumber = Math.round(resultado);
+
+
 
 // Print the generated random number
 
-
+console.log(randoNumber);
 
 /*******************************************
     Iteration 3.1 | Booleans
@@ -61,16 +74,17 @@ const a = true;
 const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
-const expression1 = a && b;
-
-const expression2 = a || b;
-
-const expression3 = !a && b;
-
-const expression4 = !(a && b);
-
-const expression5 = !a || !b;
-
-const expression6 = !(a || b);
-
-const expression7 = a && a;
+const expression1 = a && b; // false
+console.log(expression1)
+const expression2 = a || b; // true
+console.log(expression2)
+const expression3 = !a && b; // false
+console.log(expression3)
+const expression4 = !(a && b); // true
+console.log(expression4)
+const expression5 = !a || !b; // true
+console.log(expression5)
+const expression6 = !(a || b); // false
+console.log(expression6)
+const expression7 = a && a; // true
+console.log(expression7)
