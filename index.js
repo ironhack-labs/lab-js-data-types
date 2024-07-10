@@ -7,10 +7,11 @@ const s3 = "Ted";
 const s4 = "bread";
 const s5 = "and";
 
-// Concatenate the string variables into one new string
+const tongueTwister = `"${s1} ${s2} ${s3} ${s4} ${s5} ${s3} ${s2} ${s1} ${s4}"`
+
+console.log(tongueTwister);
 
 
-// Print out the concatenated string
 
 
 
@@ -20,11 +21,13 @@ const s5 = "and";
 *******************************************/
 const part1 = "java";
 const part2 = "script";
+const lastCharUp1 = part1[3].toUpperCase();
+const newPart1 = part1.substr(0, 3) + lastCharUp1;
+const lastCharUp2 = part2[5].toUpperCase();
+const newPart2 = part2.substr(0, 5) + lastCharUp2;
+const result = newPart1+newPart2;
+console.log(result);
 
-// Convert the last letter of part1 and part2 to uppercase and concatenate the strings
-
-
-// Print the cameLtaiL-formatted string
 
 
 
@@ -34,10 +37,13 @@ const part2 = "script";
 *******************************************/
 const billTotal = 84;
 
-// Calculate the tip (15% of the bill total)
+const tip = 84 * 0.15;
+
+const tipAmount = tip.toFixed(2);
+
+console.log(tipAmount);
 
 
-// Print out the tipAmount
 
 
 
@@ -46,10 +52,9 @@ const billTotal = 84;
     Iteration 2.2 | Generate Random Number
 *******************************************/
 
-// Generate a random integer between 1 and 10 (inclusive)
+let x = Math.floor((Math.random() * 10) + 1);
+console.log(x);
 
-
-// Print the generated random number
 
 
 
@@ -61,16 +66,30 @@ const a = true;
 const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
-const expression1 = a && b;
+const expression1 = a && b; //false
 
-const expression2 = a || b;
+console.log(expression1);
 
-const expression3 = !a && b;
+const expression2 = a || b; //true
 
-const expression4 = !(a && b);
+console.log(expression2);
 
-const expression5 = !a || !b;
+const expression3 = !a && b; // false
 
-const expression6 = !(a || b);
+console.log(expression3);
 
-const expression7 = a && a;
+const expression4 = !(a && b); // true
+
+console.log(expression4);
+
+const expression5 = !a || !b; // true
+
+console.log(expression5);
+
+const expression6 = !(a || b); // false
+
+console.log(expression6);
+
+const expression7 = a && a; // true
+
+console.log(expression7);
