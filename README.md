@@ -120,9 +120,10 @@ const s4 = "bread";
 const s5 = "and";
 
 // Concatenate the string variables into one new string
+const tongueTwister = s1 + " " + s2  + " " + s3 +" " + s4 + " " + s5 + " " + s3 + " " + s2 + " " + s1 + " " +s4;
 
 // Print out the concatenated string
-```
+console.log(tongueTwister);
 
 <br>
 
@@ -145,12 +146,13 @@ Once done, print out the `result` string using `console.log()`.
 ```js
 const part1 = "java";
 const part2 = "script";
-
+const result = `${part1} + ${part2}`;
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
-
+const part1Upper = part1.slice(0,3) + part1[3].toUpperCase();
+const part2Upper = part2.slice(0,5) + part2[5];
+const cameLtaiL = part1Upper + part2Upper;
 // Print the cameLtaiL-formatted string
-
-```
+console.log(cameLtaiL);
 
 <br>
 
