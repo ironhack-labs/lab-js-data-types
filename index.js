@@ -8,10 +8,9 @@ const s4 = "bread";
 const s5 = "and";
 
 // Concatenate the string variables into one new string
-
-
+let newString = `${s1} ${s2} ${s3} ${s4} ${s5} ${s3} ${s2} ${s1} ${s4}`;
 // Print out the concatenated string
-
+console.log(newString);
 
 
 
@@ -22,11 +21,13 @@ const part1 = "java";
 const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
+let newPart1 = part1.slice(0, -1) + part1.slice(-1).toUpperCase();
+let newPart2 = part2.slice(0, -1) + part2.slice(-1).toUpperCase();
 
-
+let camelTail = newPart1 + newPart2;
 // Print the cameLtaiL-formatted string
 
-
+console.log(camelTail);
 
 
 /*******************************************
@@ -35,10 +36,10 @@ const part2 = "script";
 const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
-
+let tip = billTotal*0.15;
 
 // Print out the tipAmount
-
+console.log(tip);
 
 
 
@@ -48,9 +49,9 @@ const billTotal = 84;
 
 // Generate a random integer between 1 and 10 (inclusive)
 
-
+let numRandom = Math.floor(Math.random() * 10) + 1;
 // Print the generated random number
-
+console.log(numRandom);
 
 
 /*******************************************
@@ -62,15 +63,22 @@ const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
 const expression1 = a && b;
+console.log("La expresión 1 es F");
 
 const expression2 = a || b;
+console.log("La expresión 2 es V");
 
 const expression3 = !a && b;
+console.log("La expresión 3 es F");
 
 const expression4 = !(a && b);
+console.log("La expresión 4 es V");
 
 const expression5 = !a || !b;
+console.log("La expresión 5 es F");
 
 const expression6 = !(a || b);
+console.log("La expresión 6 es F");
 
 const expression7 = a && a;
+console.log("La expresión 7 es V");
