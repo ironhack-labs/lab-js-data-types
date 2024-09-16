@@ -8,6 +8,8 @@ const s4 = "bread";
 const s5 = "and";
 
 // Concatenate the string variables into one new string
+let tongueTwister= s1+" "+s2+" "+s3+" "+s4+" "+s5;
+console.log(tongueTwister);
 
 
 // Print out the concatenated string
@@ -26,7 +28,8 @@ const part2 = "script";
 
 // Print the cameLtaiL-formatted string
 
-
+let camelTail = part1.slice(0, -1) + part1.slice(-1).toUpperCase() + part2.slice(0, -1) + part2.slice(-1).toUpperCase();
+console.log(camelTail);
 
 
 /*******************************************
@@ -39,8 +42,9 @@ const billTotal = 84;
 
 // Print out the tipAmount
 
+let tipAmount= billTotal*0.15;
 
-
+console.log(tipAmount);
 
 /*******************************************
     Iteration 2.2 | Generate Random Number
@@ -51,7 +55,10 @@ const billTotal = 84;
 
 // Print the generated random number
 
+const randomNumber = Math.floor(Math.random() * 10) + 1;
 
+
+console.log(randomNumber);
 
 /*******************************************
     Iteration 3.1 | Booleans
@@ -61,16 +68,21 @@ const a = true;
 const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
-const expression1 = a && b;
 
-const expression2 = a || b;
 
-const expression3 = !a && b;
+const expression1 = a && b;       // false
+const expression2 = a || b;       // true
+const expression3 = !a && b;      // false
+const expression4 = !(a && b);    // true
+const expression5 = !a || !b;     // true
+const expression6 = !(a || b);    // false
+const expression7 = a && a;       // true
 
-const expression4 = !(a && b);
 
-const expression5 = !a || !b;
-
-const expression6 = !(a || b);
-
-const expression7 = a && a;
+console.log(expression1);  // false
+console.log(expression2);  // true
+console.log(expression3);  // false
+console.log(expression4);  // true
+console.log(expression5);  // true
+console.log(expression6);  // false
+console.log(expression7);  // true
