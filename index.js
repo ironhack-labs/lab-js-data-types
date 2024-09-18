@@ -12,14 +12,17 @@ const s5 = "and";
 
 // Print out the concatenated string
 
-
-
-
+console.log("Fred", "fed", "Ted","bread","and");
 /*******************************************
     Iteration 1.2 | Camel Tail
 *******************************************/
 const part1 = "java";
 const part2 = "script";
+
+const modifiedPart1 = part1.slice(0, -1) + part1.slice(-1).toUpperCase();
+const modifiedPart2 = part2.slice(0, -1) + part2.slice(-1).toUpperCase();
+const result= modifiedPart1 + modifiedPart2;
+console.log(result);
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
 
@@ -34,6 +37,9 @@ const part2 = "script";
 *******************************************/
 const billTotal = 84;
 
+const tip= billTotal * 0.15;
+console.log(tip);
+
 // Calculate the tip (15% of the bill total)
 
 
@@ -45,7 +51,9 @@ const billTotal = 84;
 /*******************************************
     Iteration 2.2 | Generate Random Number
 *******************************************/
-
+const randomNumber=
+Math.floor(Math.random)() * 10 + 1;
+console.log(randomNumber);
 // Generate a random integer between 1 and 10 (inclusive)
 
 
@@ -60,17 +68,18 @@ const billTotal = 84;
 const a = true;
 const b = false;
 
+
 // Try and guess the output of the below expressions first and write your answers down:
-const expression1 = a && b;
+const expression1 = a && b; //false
 
-const expression2 = a || b;
+const expression2 = a || b; //true
 
-const expression3 = !a && b;
+const expression3 = !a && b;//false
 
-const expression4 = !(a && b);
+const expression4 = !(a && b);//true
 
-const expression5 = !a || !b;
+const expression5 = !a || !b;//true
 
-const expression6 = !(a || b);
+const expression6 = !(a || b);//false
 
-const expression7 = a && a;
+const expression7 = a && a;//true
