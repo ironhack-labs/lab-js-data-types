@@ -9,8 +9,13 @@ const s5 = "and";
 
 // Concatenate the string variables into one new string
 
+const tongueTwister = `${s1} ${s2} ${s3} ${s4} ${s5} ${s3} ${s2} ${s1} ${s4}`
 
 // Print out the concatenated string
+
+
+console.log(tongueTwister)
+
 
 
 
@@ -22,11 +27,44 @@ const part1 = "java";
 const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
+let upperl = "";
+
+
+for (let i = 0; i < part1.length; i++) {
+    const char = part1[i];
+    upperl += char;
+}
+
+
+if (upperl.length > 0) {
+    upperl = upperl.slice(0, -1) + upperl.charAt(upperl.length - 1).toUpperCase();
+}
+
+console.log(upperl);
+
+
+let upperl2 = ""
+
+
+for (let i = 0; i < part2.length; i++) {
+    const char = part2[i];
+    upperl2 += char;
+}
+
+
+if (upperl2.length > 0) {
+    upperl2 = upperl2.slice(0, -1) + upperl2.charAt(upperl2.length - 1).toUpperCase();
+}
+
+console.log(upperl2);
+
+
 
 
 // Print the cameLtaiL-formatted string
 
-
+let cameLtaiL = upperl + upperl2
+console.log(cameLtaiL)
 
 
 /*******************************************
@@ -36,8 +74,13 @@ const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
 
+let TipMount = billTotal * 0.15
+
 
 // Print out the tipAmount
+
+console.log(TipMount)
+
 
 
 
@@ -48,9 +91,12 @@ const billTotal = 84;
 
 // Generate a random integer between 1 and 10 (inclusive)
 
+let RandomNum = Math.floor(Math.random() * 10) + 1;
+
 
 // Print the generated random number
 
+console.log(RandomNum)
 
 
 /*******************************************
@@ -62,15 +108,30 @@ const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
 const expression1 = a && b;
+//false 
 
 const expression2 = a || b;
+//true
 
 const expression3 = !a && b;
+//false 
 
 const expression4 = !(a && b);
+//true
 
 const expression5 = !a || !b;
+//true
 
 const expression6 = !(a || b);
+//false
 
 const expression7 = a && a;
+//true
+
+console.log(`la expresion es ${expression1} `)
+console.log(`la expresion es ${expression2} `)
+console.log(`la expresion es ${expression3} `)
+console.log(`la expresion es ${expression4} `)
+console.log(`la expresion es ${expression5} `)
+console.log(`la expresion es ${expression6} `)
+console.log(`la expresion es ${expression7} `)
