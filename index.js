@@ -8,11 +8,19 @@ const s4 = "bread";
 const s5 = "and";
 
 // Concatenate the string variables into one new string
+let i= '';
+i = i.concat( s1,' ', s2,' ', s3,' ', s4);
+console.log( i )
+let j="";
+j = j.concat ( s3,' ', s2,' ', s1,' ', s4) 
+console.log( j )
+let tongueTwister = ' ';
+tongueTwister = tongueTwister.concat ( i,' ', s5,' ', j) ;
 
 
 // Print out the concatenated string
 
-
+console.log(tongueTwister);
 
 
 /*******************************************
@@ -22,9 +30,21 @@ const part1 = "java";
 const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
+let lastPosition = part1.length -1;
+console.log(lastPosition);
+let lastLetter = part1[lastPosition]
+let newpart1 = part1.slice(0,lastPosition).concat(lastLetter.toUpperCase())
+// console.log(newpart1) // javA
 
+lastPosition = part2.length -1;
+console.log(lastPosition);
+lastLetter = part2[lastPosition]
+let newpart2 = part2.slice(0,lastPosition).concat(lastLetter.toUpperCase())
+// console.log(newpart2) // scripT
 
 // Print the cameLtaiL-formatted string
+const result= ''.concat(newpart1,newpart2);
+console.log(result);
 
 
 
@@ -35,9 +55,11 @@ const part2 = "script";
 const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
+const tipAmount = billTotal * 0.15;
 
 
 // Print out the tipAmount
+console.log(tipAmount);
 
 
 
@@ -48,9 +70,10 @@ const billTotal = 84;
 
 // Generate a random integer between 1 and 10 (inclusive)
 
+const randomNumber = Math.floor(Math.random() * 10) + 1;
 
 // Print the generated random number
-
+console.log(randomNumber);
 
 
 /*******************************************
@@ -62,15 +85,16 @@ const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
 const expression1 = a && b;
-
+//false
 const expression2 = a || b;
-
+//true
 const expression3 = !a && b;
-
+//false
 const expression4 = !(a && b);
-
+//true
 const expression5 = !a || !b;
-
+//true
 const expression6 = !(a || b);
-
+//false
 const expression7 = a && a;
+//true
