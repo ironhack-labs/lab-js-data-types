@@ -8,11 +8,11 @@ const s4 = "bread";
 const s5 = "and";
 
 // Concatenate the string variables into one new string
-
+const concastic= s1 + s2 + s3 + s4 + s5;
 
 // Print out the concatenated string
 
-
+console.log(concastic);
 
 
 /*******************************************
@@ -22,11 +22,13 @@ const part1 = "java";
 const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
-
-
+let firstp = part1[3].toUpperCase();
+let secondp = part2[0].toUpperCase();
+let art1 = part1.slice(0, 3)
+let art2 = part2.slice(1);
+cameLTail = art1 + firstp + secondp + art2;
 // Print the cameLtaiL-formatted string
-
-
+console.log(cameLTail);
 
 
 /*******************************************
@@ -35,10 +37,11 @@ const part2 = "script";
 const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
+let tip = billTotal*0.15;
 
 
 // Print out the tipAmount
-
+console.log(billTotal+tip);
 
 
 
@@ -47,10 +50,10 @@ const billTotal = 84;
 *******************************************/
 
 // Generate a random integer between 1 and 10 (inclusive)
-
-
+let rdm = Math.random() * 10;
+rdm = Math.round(rdm)
 // Print the generated random number
-
+console.log(rdm);
 
 
 /*******************************************
@@ -62,15 +65,16 @@ const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
 const expression1 = a && b;
-
+false
 const expression2 = a || b;
-
+true
 const expression3 = !a && b;
-
+true
 const expression4 = !(a && b);
-
+true
 const expression5 = !a || !b;
-
+false
 const expression6 = !(a || b);
-
+false
 const expression7 = a && a;
+true
