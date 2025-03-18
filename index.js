@@ -7,13 +7,7 @@ const s3 = "Ted";
 const s4 = "bread";
 const s5 = "and";
 
-// Concatenate the string variables into one new string
-
-
-// Print out the concatenated string
-
-
-
+console.log(`${s1} ${s2} ${s3} ${s4} ${s5} ${s3} ${s2} ${s1} ${s4}`)
 
 /*******************************************
     Iteration 1.2 | Camel Tail
@@ -22,10 +16,11 @@ const part1 = "java";
 const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
+const formatString = `${part1.slice(0,part1.length-1)}${part1.slice(-1).toUpperCase()} ${part2.slice(0,part2.length-1)}${part2.slice(-1).toUpperCase()}`;
 
 
 // Print the cameLtaiL-formatted string
-
+console.log(formatString);
 
 
 
@@ -38,7 +33,7 @@ const billTotal = 84;
 
 
 // Print out the tipAmount
-
+console.log(billTotal*0.15);
 
 
 
@@ -50,7 +45,7 @@ const billTotal = 84;
 
 
 // Print the generated random number
-
+console.log(Math.floor(Math.random()*10)+1);
 
 
 /*******************************************
@@ -61,16 +56,18 @@ const a = true;
 const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
+
+// false
 const expression1 = a && b;
-
+// true
 const expression2 = a || b;
-
+// false
 const expression3 = !a && b;
-
+// true
 const expression4 = !(a && b);
-
+// true
 const expression5 = !a || !b;
-
+// false
 const expression6 = !(a || b);
-
+// true
 const expression7 = a && a;
