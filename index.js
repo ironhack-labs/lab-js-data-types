@@ -54,9 +54,9 @@ console.log(tipAmount)
 
 // Print the generated random number
 
-for (let i=1; i<=10;i++){
-    console.log(i);
-}
+const randomNumber= Math.floor(Math.random()*10)+1;
+
+console.log(randomNumber);
 /*******************************************
     Iteration 3.1 | Booleans
 *******************************************/
