@@ -12,7 +12,8 @@ const s5 = "and";
 
 // Print out the concatenated string
 
-
+const tongueTwister= `${s1} ${s2} ${s3} ${s4} ${s5}`;
+console.log(tongueTwister);
 
 
 /*******************************************
@@ -26,8 +27,9 @@ const part2 = "script";
 
 // Print the cameLtaiL-formatted string
 
+const camelTail = `${part1.slice(0, -1)}${part1.slice(-1).toUpperCase()}${part2.slice(0, -1)}${part2.slice(-1).toUpperCase()}`;
 
-
+console.log(camelTail);
 
 /*******************************************
     Iteration 2.1 | Calculate Tip
@@ -40,7 +42,8 @@ const billTotal = 84;
 // Print out the tipAmount
 
 
-
+const tipAmount= billTotal*0.15;
+console.log(tipAmount)
 
 /*******************************************
     Iteration 2.2 | Generate Random Number
@@ -51,8 +54,9 @@ const billTotal = 84;
 
 // Print the generated random number
 
-
-
+for (let i=1; i<=10;i++){
+    console.log(i);
+}
 /*******************************************
     Iteration 3.1 | Booleans
 *******************************************/
@@ -62,15 +66,18 @@ const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
 const expression1 = a && b;
-
+//false
 const expression2 = a || b;
-
+//true
 const expression3 = !a && b;
-
+//false
 const expression4 = !(a && b);
-
+//true
 const expression5 = !a || !b;
-
+//true
 const expression6 = !(a || b);
-
+//false
 const expression7 = a && a;
+//true
+
+console.log(expression7)
