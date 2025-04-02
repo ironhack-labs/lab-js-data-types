@@ -10,9 +10,10 @@ const s5 = "and";
 // Concatenate the string variables into one new string
 
 
+
 // Print out the concatenated string
 
-
+console.log(`${s1} ${s2} ${s3} ${s4} ${s5} ${s3} ${s2} ${s1} ${s4}`)
 
 
 /*******************************************
@@ -20,9 +21,12 @@ const s5 = "and";
 *******************************************/
 const part1 = "java";
 const part2 = "script";
-
+const capLast1 = part1.slice(0, 3) + part1.charAt(3).toUpperCase() 
+const capLast2 = part2.slice(0,5) + part2.charAt(5).toUpperCase()
+const result = capLast1 + capLast2
+console.log(result)
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
-
+//this was TRAUMATISING
 
 // Print the cameLtaiL-formatted string
 
@@ -35,7 +39,10 @@ const part2 = "script";
 const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
-
+const tip = 15 
+const tipAmount = billTotal * tip / 100;
+const paidBill = billTotal + tipAmount
+console.log(paidBill)
 
 // Print out the tipAmount
 
@@ -50,7 +57,10 @@ const billTotal = 84;
 
 
 // Print the generated random number
-
+const minNum = 1
+const maxNum = 10
+const randomNumber = Math.floor(Math.random() * (maxNum- minNum + 1) ) + minNum;
+console.log(randomNumber)
 
 
 /*******************************************
@@ -61,16 +71,17 @@ const a = true;
 const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
-const expression1 = a && b;
+const expression1 = a && b; //false//
 
-const expression2 = a || b;
+const expression2 = a || b; //true//
 
-const expression3 = !a && b;
+const expression3 = !a && b; //false//
 
-const expression4 = !(a && b);
+const expression4 = !(a && b); //false//
 
-const expression5 = !a || !b;
+const expression5 = !a || !b; //false//
 
-const expression6 = !(a || b);
+const expression6 = !(a || b); //false//
 
-const expression7 = a && a;
+const expression7 = a && a; //true//
+console.log(expression1, expression2, expression3, expression4, expression5, expression6, expression7 )
