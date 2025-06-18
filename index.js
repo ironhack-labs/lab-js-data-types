@@ -14,6 +14,12 @@ const s5 = "and";
 
 
 
+const tongueTwister = s1 + " " + s2 + " " + s3 + " " + s4 + " " + s5 + " " + s3 + " " + s2 + " " + s1 + " " + s4;
+
+
+console.log(tongueTwister);
+
+
 
 /*******************************************
     Iteration 1.2 | Camel Tail
@@ -25,6 +31,10 @@ const part2 = "script";
 
 
 // Print the cameLtaiL-formatted string
+const cameLtaiL = part1.slice(0, -1) + part1.slice(-1).toUpperCase() +
+                  part2.slice(0, -1) + part2.slice(-1).toUpperCase();
+
+console.log(cameLtaiL);
 
 
 
@@ -41,6 +51,11 @@ const billTotal = 84;
 
 
 
+const tipAmount = billTotal * 0.15;
+
+console.log(tipAmount);
+
+
 
 /*******************************************
     Iteration 2.2 | Generate Random Number
@@ -50,6 +65,9 @@ const billTotal = 84;
 
 
 // Print the generated random number
+const randomNumber = Math.floor(Math.random() * 10) + 1;
+
+console.log(randomNumber);
 
 
 
@@ -74,3 +92,11 @@ const expression5 = !a || !b;
 const expression6 = !(a || b);
 
 const expression7 = a && a;
+
+console.log(expression1); 
+console.log(expression2); 
+console.log(expression3); 
+console.log(expression4); 
+console.log(expression5); 
+console.log(expression6); 
+console.log(expression7);
