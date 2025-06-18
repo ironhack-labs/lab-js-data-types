@@ -9,9 +9,12 @@ const s5 = "and";
 
 // Concatenate the string variables into one new string
 
+const tongueTwister = `${s1} ${s2} ${s3} ${s4} ${s5} ${s3} ${s2} ${s1} ${s4} `
+
 
 // Print out the concatenated string
 
+console.log(tongueTwister)
 
 
 
@@ -23,10 +26,13 @@ const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
 
+const camelCasePart1 = part1.slice(0,part1.length-1) + part1.slice(-1).toUpperCase()
+const camelCasePart2 = part2.slice(0,part2.length-1) + part2.slice(-1).toUpperCase()
+const cameLtaiL = camelCasePart1 + camelCasePart2
 
-// Print the cameLtaiL-formatted string
+// Print the ameLtaiL-formatted string
 
-
+console.log(cameLtaiL)
 
 
 /*******************************************
@@ -36,8 +42,11 @@ const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
 
+const tipAmount = billTotal * 0.15;
 
 // Print out the tipAmount
+
+console.log(tipAmount)
 
 
 
@@ -47,11 +56,11 @@ const billTotal = 84;
 *******************************************/
 
 // Generate a random integer between 1 and 10 (inclusive)
-
+const randomNumber = Math.floor(Math.random() * 11)
 
 // Print the generated random number
 
-
+console.log(randomNumber)
 
 /*******************************************
     Iteration 3.1 | Booleans
@@ -74,3 +83,20 @@ const expression5 = !a || !b;
 const expression6 = !(a || b);
 
 const expression7 = a && a;
+
+/* Answers:
+false
+true
+false
+true
+true
+false
+true*/
+
+console.log(expression1);
+console.log(expression2);
+console.log(expression3);
+console.log(expression4);
+console.log(expression5);
+console.log(expression6);
+console.log(expression7);
