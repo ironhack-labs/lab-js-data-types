@@ -9,7 +9,7 @@ const s5 = "and";
 
 // Concatenate the string variables into one new string
 
-const newStr = s1 + " " + s2 + " " + s3 + " " + s4 + " " + s5;
+const newStr = `${s1} ${s2} ${s3} ${s4} ${s5} ${s1} ${s2} ${s3} ${s4} `;
 // Print out the concatenated string
 
 console.log(newStr);
@@ -22,8 +22,8 @@ const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
 const newPart1 = part1.slice(0, 3) + part1[3].toUpperCase();
-const newPart2 = part2[0].toUpperCase() + part2.slice(1);
-const newPart = newPart1 + " " + newPart2;
+const newPart2 = part2.slice(0, 5) + part2[5].toUpperCase();
+const newPart = `${newPart1} ${newPart2}`;
 
 // Print the cameLtaiL-formatted string
 console.log(newPart);
@@ -44,10 +44,11 @@ console.log(tip);
 *******************************************/
 
 // Generate a random integer between 1 and 10 (inclusive)
-let randomInteger = 10 * Math.random();
+
+let floor = Math.floor(Math.random() * 11);
 
 // Print the generated random number
-console.log(randomInteger);
+console.log(floor);
 /*******************************************
     Iteration 3.1 | Booleans
 *******************************************/
@@ -58,21 +59,28 @@ const b = false;
 // Try and guess the output of the below expressions first and write your answers down:
 const expression1 = a && b;
 false;
+console.log(expression1);
 
 const expression2 = a || b;
 true;
+console.log(expression2);
 
 const expression3 = !a && b;
 true;
+console.log(expression3);
 
 const expression4 = !(a && b);
 true;
+console.log(expression4);
 
 const expression5 = !a || !b;
 true;
+console.log(expression5);
 
 const expression6 = !(a || b);
 false;
+console.log(expression6);
 
 const expression7 = a && a;
 true;
+console.log(expression7);
