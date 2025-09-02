@@ -6,13 +6,9 @@ const s2 = "fed";
 const s3 = "Ted";
 const s4 = "bread";
 const s5 = "and";
-const s6 = "Ted";
-const s7 = "fed";
-const s8 = "Fred";
-const s9 = "bread";
 
 // Concatenate the string variables into one new string
-const sAll = s1 + " " + s2 + " " + s3 + " " + s4 + " " + s5 + " " + s6 + " " + s7 + " " + s8 + " " + s9 + "."
+const sAll = s1 + " " + s2 + " " + s3 + " " + s4 + " " + s5 + " " + s3 + " " + s2 + " " + s1 + " " + s4
 
 
 
