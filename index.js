@@ -9,11 +9,27 @@ const s5 = "and";
 
 // Concatenate the string variables into one new string
 
+const tongueTwister =
+  s1 +
+  " " +
+  s2 +
+  " " +
+  s3 +
+  " " +
+  s4 +
+  " " +
+  s5 +
+  " " +
+  s3 +
+  " " +
+  s2 +
+  " " +
+  s1 +
+  " " +
+  s4;
 
 // Print out the concatenated string
-
-
-
+//console.log(tongueTwister + ".");
 
 /*******************************************
     Iteration 1.2 | Camel Tail
@@ -23,11 +39,11 @@ const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
 
+const lastLetter = part1.slice(0, 3) + part1[3].toUpperCase();
+const lastLetter2 = part2.slice(0, 5) + part2[5].toUpperCase();
+console.log(lastLetter, lastLetter2);
 
 // Print the cameLtaiL-formatted string
-
-
-
 
 /*******************************************
     Iteration 2.1 | Calculate Tip
@@ -36,11 +52,10 @@ const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
 
+const tip = billTotal * 0.15;
+console.log(tip);
 
 // Print out the tipAmount
-
-
-
 
 /*******************************************
     Iteration 2.2 | Generate Random Number
@@ -48,10 +63,10 @@ const billTotal = 84;
 
 // Generate a random integer between 1 and 10 (inclusive)
 
+const random = Math.random();
+console.log(random);
 
 // Print the generated random number
-
-
 
 /*******************************************
     Iteration 3.1 | Booleans
@@ -62,15 +77,22 @@ const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
 const expression1 = a && b;
+false;
 
 const expression2 = a || b;
+true;
 
 const expression3 = !a && b;
+true;
 
 const expression4 = !(a && b);
+false;
 
 const expression5 = !a || !b;
+true;
 
 const expression6 = !(a || b);
+true;
 
 const expression7 = a && a;
+true;
