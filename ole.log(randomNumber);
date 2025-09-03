@@ -1,0 +1,79 @@
+[1mdiff --git a/index.js b/index.js[m
+[1mindex 294f6b2..4198e4e 100644[m
+[1m--- a/index.js[m
+[1m+++ b/index.js[m
+[36m@@ -8,11 +8,11 @@[m [mconst s4 = "bread";[m
+ const s5 = "and";[m
+ [m
+ // Concatenate the string variables into one new string[m
+[31m-[m
+[32m+[m[32mlet newString = s1 + " " + s2 + " " + s5 + " " + s3 + " " + s4 + " " + s5;[m
+ [m
+ // Print out the concatenated string[m
+ [m
+[31m-[m
+[32m+[m[32mconsole.log(newString);[m
+ [m
+ [m
+ /*******************************************[m
+[36m@@ -23,10 +23,11 @@[m [mconst part2 = "script";[m
+ [m
+ // Convert the last letter of part1 and part2 to uppercase and concatenate the strings[m
+ [m
+[32m+[m[32mlet sol2 = part1.slice(0, -1) + part1.slice(-1).toUpperCase() + part2.slice(0, -1) + part2.slice(-1).toUpperCase();[m
+ [m
+ // Print the cameLtaiL-formatted string[m
+ [m
+[31m-[m
+[32m+[m[32mconsole.log(sol2);[m
+ [m
+ [m
+ /*******************************************[m
+[36m@@ -36,7 +37,7 @@[m [mconst billTotal = 84;[m
+ [m
+ // Calculate the tip (15% of the bill total)[m
+ [m
+[31m-[m
+[32m+[m[32mlet newBill = billTotal * 0.85;[m
+ // Print out the tipAmount[m
+ [m
+ [m
+[36m@@ -48,10 +49,11 @@[m [mconst billTotal = 84;[m
+ [m
+ // Generate a random integer between 1 and 10 (inclusive)[m
+ [m
+[32m+[m[32mlet randomNumber = Math.ceil(Math.random() * 10);[m
+ [m
+ // Print the generated random number[m
+ [m
+[31m-[m
+[32m+[m[32mconsole.log(randomNumber);[m
+ [m
+ /*******************************************[m
+     Iteration 3.1 | Booleans[m
+[36m@@ -62,15 +64,16 @@[m [mconst b = false;[m
+ [m
+ // Try and guess the output of the below expressions first and write your answers down:[m
+ const expression1 = a && b;[m
+[31m-[m
+[32m+[m[32mconsole.log(expression1);[m
+ const expression2 = a || b;[m
+[31m-[m
+[32m+[m[32mconsole.log(expression2);[m
+ const expression3 = !a && b;[m
+[31m-[m
+[32m+[m[32mconsole.log(expression3);[m
+ const expression4 = !(a && b);[m
+[31m-[m
+[32m+[m[32mconsole.log(expression4);[m
+ const expression5 = !a || !b;[m
+[31m-[m
+[32m+[m[32mconsole.log(expression5);[m
+ const expression6 = !(a || b);[m
+[31m-[m
+[31m-const expression7 = a && a;[m
+\ No newline at end of file[m
+[32m+[m[32mconsole.log(expression6);[m
+[32m+[m[32mconst expression7 = a && a;[m
+[32m+[m[32mconsole.log(expression7);[m
+\ No newline at end of file[m
