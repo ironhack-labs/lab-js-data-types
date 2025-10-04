@@ -9,9 +9,11 @@ const s5 = "and";
 
 // Concatenate the string variables into one new string
 
+const tongueTwister = s1 + " " + s2 + " " + s3 + " " + s4 + " " + s5 + " " + s3 + " " + s2 + " " + s1 + " " + s4
+console.log(tongueTwister)
 
 // Print out the concatenated string
-
+console.log(tongueTwister)
 
 
 
@@ -22,10 +24,19 @@ const part1 = "java";
 const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
-
+//const firstWord = part1[3].toUpperCase();
+//const secondWord = part2[5].toUpperCase();
+//const result = `jav${firstWord}scrip${secondWord}`
 
 // Print the cameLtaiL-formatted string
+//console.log(result)
 
+const firstWord = part1.slice(0,-1) + part1.slice(-1).toUpperCase();
+const secondWord = part2.slice(0,-1) + part2.slice(-1).toUpperCase();
+
+const result = `${firstWord}${secondWord}`
+
+console.log(result)
 
 
 
@@ -36,6 +47,9 @@ const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
 
+tipAmount = (billTotal * 15) / 100
+
+console.log(`Total tips is ${tipAmount}`)
 
 // Print out the tipAmount
 
@@ -47,7 +61,8 @@ const billTotal = 84;
 *******************************************/
 
 // Generate a random integer between 1 and 10 (inclusive)
-
+const randomNumber = Math.floor(Math.random() * 10) + 1;
+console.log(randomNumber);
 
 // Print the generated random number
 
@@ -61,16 +76,16 @@ const a = true;
 const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
-const expression1 = a && b;
+const expression1 = a && b; //false
 
-const expression2 = a || b;
+const expression2 = a || b; //true
 
-const expression3 = !a && b;
+const expression3 = !a && b; //false
 
-const expression4 = !(a && b);
+const expression4 = !(a && b); //true
 
-const expression5 = !a || !b;
+const expression5 = !a || !b; //true
 
-const expression6 = !(a || b);
+const expression6 = !(a || b); //false
 
-const expression7 = a && a;
+const expression7 = a && a; //true
