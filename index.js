@@ -9,6 +9,8 @@ const s5 = "and";
 
 // Concatenate the string variables into one new string
 
+const tongueTwister = `${s1} ${s5} ${s2} ${s5} ${s3} ${s5} ${s4}.`;
+console.log(tongueTwister);
 
 // Print out the concatenated string
 
@@ -23,6 +25,8 @@ const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
 
+const cameLtaiL = part1.slice(0, -1) + part1.slice(-1).toUpperCase() + part2.slice(0, -1) + part2.slice(-1).toUpperCase();
+console.log(cameLtaiL); 
 
 // Print the cameLtaiL-formatted string
 
@@ -36,7 +40,9 @@ const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
 
-
+let tipAmount = billTotal * 0.15;
+tipAmount = tipAmount.toFixed(2);
+console.log(tipAmount);
 // Print out the tipAmount
 
 
@@ -48,7 +54,8 @@ const billTotal = 84;
 
 // Generate a random integer between 1 and 10 (inclusive)
 
-
+let randomNumber = Math.floor(Math.random() * 10) + 1;
+console.log(randomNumber);  
 // Print the generated random number
 
 
@@ -59,7 +66,6 @@ const billTotal = 84;
 
 const a = true;
 const b = false;
-
 // Try and guess the output of the below expressions first and write your answers down:
 const expression1 = a && b;
 
