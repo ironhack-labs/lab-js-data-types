@@ -1,11 +1,15 @@
 /*******************************************
     Iteration 1.1 | Tongue Twister
 *******************************************/
+const tongueTwister = "";
 const s1 = "Fred";
 const s2 = "fed";
 const s3 = "Ted";
 const s4 = "bread";
 const s5 = "and";
+
+console.log(`${s1} ${s2} ${s3} ${s4} ${s5} ${s3} ${s2} ${s1} ${s4}.`); 
+
 
 // Concatenate the string variables into one new string
 
@@ -22,11 +26,11 @@ const part1 = "java";
 const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
-
+const cameLtaiL = part1.slice(0, -1) + part1.slice(-1).toUpperCase() + part2.slice(0, -1) + part2.slice(-1).toUpperCase();
 
 // Print the cameLtaiL-formatted string
 
-
+console.log(cameLtaiL);
 
 
 /*******************************************
@@ -35,21 +39,25 @@ const part2 = "script";
 const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
+const tipAmount = billTotal * 0.15;
 
 
 // Print out the tipAmount
-
+console.log(tipAmount);
 
 
 
 /*******************************************
     Iteration 2.2 | Generate Random Number
 *******************************************/
+const min = 1;
+const max = 10;
 
 // Generate a random integer between 1 and 10 (inclusive)
-
+const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
 
 // Print the generated random number
+console.log(randomNumber);
 
 
 
