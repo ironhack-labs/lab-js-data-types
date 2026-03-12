@@ -11,8 +11,17 @@ const s5 = "and";
 
 
 // Print out the concatenated string
+const solution = "Fred fed Ted bread and Ted fed Fred bread";
 
+const tongueTwister = `${s1} ${s2} ${s3} ${s4} ${s5} ${s3} ${s2} ${s1} ${s4}`;
 
+console.log(tongueTwister);
+
+// if (tongueTwister === solution) {
+//     console.log("Correct.");
+// } else {
+//     console.log("Wrong. Try again.");
+// }
 
 
 /*******************************************
@@ -23,9 +32,21 @@ const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
 
+const part1Last = part1.slice(part1.length - 1).toUpperCase();
+const part1First = part1.slice(0, part1.length - 1);
+const part1New = part1First + part1Last;
+//console.log(part1New);
+
+const part2Last = part2.slice(part2.length - 1).toUpperCase();
+part2First = part2.slice(0, part2.length - 1);
+
+const part2New = part2First + part2Last;
+//console.log(part2New);
+
+const part3 = part1New + part2New;
 
 // Print the cameLtaiL-formatted string
-
+console.log(part3);
 
 
 
@@ -36,10 +57,11 @@ const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
 
+const timAmount = billTotal * 0.15;
 
 // Print out the tipAmount
 
-
+console.log(timAmount);
 
 
 /*******************************************
@@ -47,10 +69,10 @@ const billTotal = 84;
 *******************************************/
 
 // Generate a random integer between 1 and 10 (inclusive)
-
+const randomNumber = Math.floor(Math.random() * 10) + 1;
 
 // Print the generated random number
-
+console.log(randomNumber);
 
 
 /*******************************************
@@ -61,16 +83,23 @@ const a = true;
 const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
-const expression1 = a && b;
+const expression1 = a && b; // false
+console.log("a && b:", expression1);
 
-const expression2 = a || b;
+const expression2 = a || b; // true
+console.log("a || b:", expression2);
 
-const expression3 = !a && b;
+const expression3 = !a && b; // false
+console.log("!a && b:", expression3);
 
-const expression4 = !(a && b);
+const expression4 = !(a && b); // true
+console.log("!(a && b):", expression4);
 
-const expression5 = !a || !b;
+const expression5 = !a || !b; // true
+console.log("!a || !b:", expression5);
 
-const expression6 = !(a || b);
+const expression6 = !(a || b); // false
+console.log("!(a || b):", expression6);
 
-const expression7 = a && a;
+const expression7 = a && a; // true
+console.log("a && a:", expression7);
