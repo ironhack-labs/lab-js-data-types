@@ -8,10 +8,12 @@ const s4 = "bread";
 const s5 = "and";
 
 // Concatenate the string variables into one new string
-
+const tongueTwister =                                                                                                                                         
+    s1 + " " + s2 + " " + s3 + " " + s4 + " " + s5 + " " + s3 + " " + s2 + " " + s1 + " " + s4;
 
 // Print out the concatenated string
-
+  console.log("Iteration 1.1:");                                                                                                                                
+  console.log(tongueTwister); 
 
 
 
@@ -22,9 +24,15 @@ const part1 = "java";
 const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
-
+  const result =                                                                                                                                                
+    part1.slice(0, part1.length - 1) +                                                                                                                          
+    part1[part1.length - 1].toUpperCase() +                                                                                                                     
+    part2.slice(0, part2.length - 1) +                                                                                                                          
+    part2[part2.length - 1].toUpperCase();
 
 // Print the cameLtaiL-formatted string
+  console.log("Iteration 1.2:");                                                                                                                                
+  console.log(result);
 
 
 
@@ -35,10 +43,11 @@ const part2 = "script";
 const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
-
+  const tipAmount = billTotal * 0.15
 
 // Print out the tipAmount
-
+  console.log("Iteration 2.1:");                                                                                                                                
+  console.log(tipAmount);
 
 
 
@@ -47,10 +56,12 @@ const billTotal = 84;
 *******************************************/
 
 // Generate a random integer between 1 and 10 (inclusive)
+const randomNumber = Math.floor(Math.random() * 10) + 1;
 
 
 // Print the generated random number
-
+  console.log("Iteration 2.2:");                                                                                                                                
+  console.log(randomNumber)
 
 
 /*******************************************
@@ -59,6 +70,8 @@ const billTotal = 84;
 
 const a = true;
 const b = false;
+                                                                                                                                                                                                                                                                                                                                                                                               
+                        
 
 // Try and guess the output of the below expressions first and write your answers down:
 const expression1 = a && b;
@@ -74,3 +87,46 @@ const expression5 = !a || !b;
 const expression6 = !(a || b);
 
 const expression7 = a && a;
+
+
+// My guesses                                                                                                                                                                                                                                                                                                                                                                                                       
+const guess1 = false;                                                                                                                                                                                                                                                                                                                                                                                               
+const guess2 = true;                                                                                                                                                                                                                                                                                                                                                                                                
+const guess3 = false;                                                                                                                                                                                                                                                                                                                                                                                               
+const guess4 = true;                                                                                                                                                                                                                                                                                                                                                                                                
+const guess5 = true;                                                                                                                                                                                                                                                                                                                                                                                                
+const guess6 = false;                                                                                                                                                                                                                                                                                                                                                                                               
+const guess7 = true; 
+
+//   - expression1 → false
+//   - expression2 → true
+//   - expression3 → false
+//   - expression4 → true
+//   - expression5 → true
+//   - expression6 → false
+//   - expression7 → true
+
+                                                                                                                                                              
+// Print guesses and real answers                                                                                                                                                                                                                                                                                                                                                                                   
+console.log("Iteration 3.1:");                                                                                                                                                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                                                                                                                                                                                      
+console.log("Expression 1 guess:", guess1);                                                                                                                                                                                                                                                                                                                                                                         
+console.log("Expression 1 real answer:", expression1);                                                                                                                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                                                                                                                                      
+console.log("Expression 2 guess:", guess2);                                                                                                                                                                                                                                                                                                                                                                         
+console.log("Expression 2 real answer:", expression2);                                                                                                                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                                                                                                                                      
+console.log("Expression 3 guess:", guess3);                                                                                                                                                                                                                                                                                                                                                                         
+console.log("Expression 3 real answer:", expression3);                                                                                                                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                                                                                                                                      
+console.log("Expression 4 guess:", guess4);                                                                                                                                                                                                                                                                                                                                                                         
+console.log("Expression 4 real answer:", expression4);                                                                                                                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                                                                                                                                      
+console.log("Expression 5 guess:", guess5);                                                                                                                                                                                                                                                                                                                                                                         
+console.log("Expression 5 real answer:", expression5);                                                                                                                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                                                                                                                                      
+console.log("Expression 6 guess:", guess6);                                                                                                                                                                                                                                                                                                                                                                         
+console.log("Expression 6 real answer:", expression6);                                                                                                                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                                                                                                                                      
+console.log("Expression 7 guess:", guess7);                                                                                                                                                                                                                                                                                                                                                                         
+console.log("Expression 7 real answer:", expression7);
