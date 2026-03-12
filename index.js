@@ -9,6 +9,10 @@ const s5 = "and";
 
 // Concatenate the string variables into one new string
 
+const tongueTwister = s1 + " " + s2 + " " + s3 + " "+ s4 + " " + s5 + " "+ s3   + " " + s2 + " " + s1 + " "+ s4 + "."
+
+
+console.log(tongueTwister );
 
 // Print out the concatenated string
 
@@ -26,8 +30,10 @@ const part2 = "script";
 
 // Print the cameLtaiL-formatted string
 
+const resultado =  part1.slice(0, 3)  + part1[3].toUpperCase() + part2.slice(0, 5) + part2[5].toUpperCase() 
 
 
+console.log(resultado);
 
 /*******************************************
     Iteration 2.1 | Calculate Tip
@@ -39,7 +45,9 @@ const billTotal = 84;
 
 // Print out the tipAmount
 
+const tipAmount = 84 * ( 15 / 100);
 
+console.log(tipAmount);
 
 
 /*******************************************
@@ -51,7 +59,9 @@ const billTotal = 84;
 
 // Print the generated random number
 
+const randomNumber = Math.floor((Math.random() * 10)+1 )
 
+console.log(randomNumber);
 
 /*******************************************
     Iteration 3.1 | Booleans
@@ -62,15 +72,25 @@ const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
 const expression1 = a && b;
+false
 
 const expression2 = a || b;
+true
 
-const expression3 = !a && b;
+
+const expression3 = !a && b; 
+false 
+
 
 const expression4 = !(a && b);
+true
+
 
 const expression5 = !a || !b;
+true
 
 const expression6 = !(a || b);
+false
 
 const expression7 = a && a;
+true
