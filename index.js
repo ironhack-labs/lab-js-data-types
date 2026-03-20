@@ -44,6 +44,8 @@ const camelTail = part1.slice(0, -1) + part1.slice(-1).toUpperCase() + part2.sli
 
 const cameLtaiL = part1.slice
 
+
+const upper
 // Print the cameLtaiL-formatted string
 
 console.log(camelTail);
@@ -64,6 +66,12 @@ const tipAmount = billTotal * 0.15;
 
 console.log(tipAmount);
 
+// Other way with teacher
+
+const totalWithTip = (84 * 15) / 100;
+
+console.log(totalWithTip);
+
 
 /*******************************************
     Iteration 2.2 | Generate Random Number
@@ -74,9 +82,17 @@ console.log(tipAmount);
 const randomNumber = Math.floor(Math.random() * 10) + 1;
 // Print the generated random number
 
-const randoomNumber = Math.floor(Math.random() * 10) + 1;
+
 
 console.log(randomNumber);
+
+// Teacher way 
+const randomNumberCeil = Math.ceil(Math.random() * 10)
+
+console.log(randomNumberCeil)
+
+
+
 
 /*******************************************
     Iteration 3.1 | Booleans
