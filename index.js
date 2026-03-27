@@ -36,17 +36,17 @@ console.log (part2Change);
 const cameLtail = `${part1Change}${part2Change}`;
 console.log (cameLtail);
 
+
 /*******************************************
     Iteration 2.1 | Calculate Tip
 *******************************************/
 const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
-
+let tipAmount = billTotal * 0.15; 
 
 // Print out the tipAmount
-
-
+console.log (tipAmount);
 
 
 /*******************************************
