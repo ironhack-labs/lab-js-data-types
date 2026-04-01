@@ -7,7 +7,7 @@ const s3 = "Ted";
 const s4 = "bread";
 const s5 = "and";
 
-let tongueTwister = s1 + s2 + s3 + s4 + s5;
+let tongueTwister = s1 + " "+s2+" "+s3+" "+s4+" "+ s5;
 
 
 console.log(tongueTwister)
@@ -28,12 +28,12 @@ const part2 = "script";
 
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
-let part1Capital= part1[part1.length-1].toUpperCase();
-let part2Capital= part2[part2.length-1].toUpperCase();
-let part1Full = part1.slice(0,part1.length-1) + part1Capital;
-let part2Full= part2.slice(0,part2.length-1) + part2Capital;
+const part1Capital= part1[part1.length-1].toUpperCase();
+const part2Capital= part2[part2.length-1].toUpperCase();
+const part1Full = part1.slice(0,part1.length-1) + part1Capital;
+const part2Full= part2.slice(0,part2.length-1) + part2Capital;
 
-let result = part1Full+ part2Full ;
+const result = part1Full+ part2Full ;
 console.log(result);
 
 // Print the cameLtaiL-formatted string
@@ -47,7 +47,7 @@ console.log(result);
 const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
-let tipAmount = billTotal * (15/100);
+let tipAmount = billTotal * 0.15;
 
 // Print out the tipAmount
 console.log(tipAmount)
@@ -87,4 +87,10 @@ const expression6 = !(a || b);//false
 
 const expression7 = a && a;//true
 
+console.log(expression1);
+console.log(expression2);
+console.log(expression3);
+console.log(expression4);
+console.log(expression5);
+console.log(expression6);
 console.log(expression7);
