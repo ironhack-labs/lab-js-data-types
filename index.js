@@ -1,5 +1,5 @@
 /*******************************************
-    Iteration 1.1 | Tongue Twister
+    Iteration 1.1 | Tongue Twister                           last
 *******************************************/
 const s1 = "Fred";
 const s2 = "fed";
@@ -10,9 +10,13 @@ const s5 = "and";
 // Concatenate the string variables into one new string
 
 
+result =(`${s1} ${s2} ${s3} ${s4}  ${s5}`);
+console.log(result);
 // Print out the concatenated string
 
 
+const part1 = "monday";
+const part2 = "tuesday";
 
 
 /*******************************************
@@ -36,7 +40,9 @@ const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
 
-
+const billTotal = 400;
+const tip = (billTotal * 15)/100
+console.log(tip); 
 // Print out the tipAmount
 
 
@@ -48,6 +54,9 @@ const billTotal = 84;
 
 // Generate a random integer between 1 and 10 (inclusive)
 
+const result2 = Math.random ()*10
+let randomInteger = Math.ceil(result2);
+console.log(randomInteger);
 
 // Print the generated random number
 
@@ -74,3 +83,20 @@ const expression5 = !a || !b;
 const expression6 = !(a || b);
 
 const expression7 = a && a;
+
+false
+true
+true
+false
+true
+true
+
+
+/*******************************************
+    Iteration 4 | Booleans
+*******************************************/
+
+const randomNumber = Math.floor(Math.random() * 10) + 1;
+
+console.log(randomNumber);
+
