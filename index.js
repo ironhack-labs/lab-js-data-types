@@ -13,7 +13,7 @@ let tongueTwister = s1+s2+s3+s4+s5;
 
 // Print out the concatenated string
 
-console.log(newString);
+console.log(tongueTwister);
 
 
 /*******************************************
