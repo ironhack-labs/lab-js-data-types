@@ -9,7 +9,7 @@ const s5 = "and";
 
 // Concatenate the string variables into one new string
 
-let newString = s1+s2+s3+s4+s5;
+let tongueTwister = s1+s2+s3+s4+s5;
 
 // Print out the concatenated string
 
@@ -27,9 +27,9 @@ const part2 = "script";
 let lastLetterFirstPart = part1[part1.length - 1].toUpperCase();
 let lastLetterSecondPart = part2[part2.length - 1].toUpperCase();
 
-let camelTail = part1.slice(0, -1)+lastLetterFirstPart+part2.slice(0, -1)+lastLetterSecondPart;
+let result = part1.slice(0, -1)+lastLetterFirstPart+part2.slice(0, -1)+lastLetterSecondPart;
 
-console.log(camelTail);
+console.log(result);
 
 // Print the cameLtaiL-formatted string
 
@@ -43,9 +43,9 @@ const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
 
-let tip = billTotal * 0.15;
+let tipAmount = billTotal * 0.15;
 
-console.log(tip);
+console.log(tipAmount);
 // Print out the tipAmount
 
 
@@ -57,9 +57,9 @@ console.log(tip);
 
 // Generate a random integer between 1 and 10 (inclusive)
 
-let randomInt = Math.floor(Math.random() * 10) + 1;
+let randomNumber = Math.floor(Math.random() * 10) + 1;
 
-console.log(randomInt);
+console.log(randomNumber);
 
 // Print the generated random number
 
