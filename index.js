@@ -7,6 +7,9 @@ const s3 = "Ted";
 const s4 = "bread";
 const s5 = "and";
 
+
+
+const tongueTwister= console.log(`tongue twister value is: ${s1} ${s2} ${s3} ${s4} ${s5} ${s3} ${s2} ${s1} ${s4}`);
 // Concatenate the string variables into one new string
 
 
@@ -22,11 +25,23 @@ const part1 = "java";
 const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
+const firstPart1 = part1[3].toUpperCase();
+const secondPart2 =part2[5].toUpperCase();
 
+const firstRestPart=part1.slice(0,3);
+const secondRestPart=part2.slice(0,5);
+
+
+console.log(firstPart1);
+console.log(secondPart2);
+console.log(firstRestPart);
+console.log(secondRestPart);
 
 // Print the cameLtaiL-formatted string
 
+let result=`${firstRestPart}${firstPart1}${secondRestPart}${secondPart2}`;
 
+console.log(result);
 
 
 /*******************************************
@@ -34,8 +49,12 @@ const part2 = "script";
 *******************************************/
 const billTotal = 84;
 
-// Calculate the tip (15% of the bill total)
 
+
+// Calculate the tip (15% of the bill total)
+const tipAmount=billTotal*15/100;
+
+console.log(tipAmount);
 
 // Print out the tipAmount
 
@@ -47,7 +66,7 @@ const billTotal = 84;
 *******************************************/
 
 // Generate a random integer between 1 and 10 (inclusive)
-
+console.log(Math.random());
 
 // Print the generated random number
 
@@ -74,3 +93,19 @@ const expression5 = !a || !b;
 const expression6 = !(a || b);
 
 const expression7 = a && a;
+
+/* // false;
+   true;
+   false;
+   true;
+   true;
+   false;
+   true; */
+
+   console.log(expression1);
+      console.log(expression2);
+         console.log(expression3);
+            console.log(expression4);
+               console.log(expression5);
+                  console.log(expression6);
+                     console.log(expression7);
