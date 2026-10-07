@@ -9,6 +9,15 @@ const s5 = "and";
 
 // Concatenate the string variables into one new string
 
+let tongueTwister= s1 + " " + s2 + " " + s3 +" " + s4 + " " + s5 + " " + s3 + " " + s2 + " " + s1 + " " + s4
+
+console.log(tongueTwister)
+
+// I wanted to try it using interpolation: 
+
+// let tongueTwister= `${s1} ${s2} ${s3} ${s4} ${s5} ${s3} ${s2} ${s1} ${s4}`
+
+// console.log(tongueTwister)
 
 // Print out the concatenated string
 
@@ -21,18 +30,30 @@ const s5 = "and";
 const part1 = "java";
 const part2 = "script";
 
-// Convert the last letter of part1 and part2 to uppercase and concatenate the strings
+let result = part1.slice(0, 3) + part1[3].toUpperCase() + part2.slice(0, 5) + part2[5].toUpperCase();
 
+console.log(result); 
 
 // Print the cameLtaiL-formatted string
 
+// I'm testing how .toUpperCase works:
+// let text = "Hello World!";
+// let result = text.toUpperCase();
+// console.log(result);
 
+// this will be the result: HELLO WORLD!
 
 
 /*******************************************
     Iteration 2.1 | Calculate Tip
 *******************************************/
 const billTotal = 84;
+
+let tipAmount = (15/100)*billTotal;
+
+console.log(tipAmount);
+
+
 
 // Calculate the tip (15% of the bill total)
 
@@ -49,6 +70,11 @@ const billTotal = 84;
 // Generate a random integer between 1 and 10 (inclusive)
 
 
+
+let randomNumber = Math.floor(Math.random()*10) + [1];
+
+console.log(randomNumber);
+
 // Print the generated random number
 
 
@@ -61,16 +87,16 @@ const a = true;
 const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
-const expression1 = a && b;
+const expression1 = a && b; // false
 
-const expression2 = a || b;
+const expression2 = a || b; // true 
 
-const expression3 = !a && b;
+const expression3 = !a && b; // false 
 
-const expression4 = !(a && b);
+const expression4 = !(a && b);  // false 
 
-const expression5 = !a || !b;
+const expression5 = !a || !b;  // true
 
-const expression6 = !(a || b);
+const expression6 = !(a || b);  // true
 
-const expression7 = a && a;
+const expression7 = a && a;  // true 
